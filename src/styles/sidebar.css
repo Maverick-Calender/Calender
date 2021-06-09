@@ -1,0 +1,42 @@
+.sidebar {
+    display: grid;
+
+    padding: 26px 10px 10px 10px;
+  
+    grid-column: 1;
+    grid-row: 1;
+
+    grid-template-rows: min-content auto;
+
+    overflow-y: hidden;
+}
+
+.sidebar-overview {
+    
+} 
+
+.sidebar-events {
+    height: 100%;
+
+    padding-top: 10px;
+
+    overflow-y: scroll;
+}
+
+.sidebar-event {
+    width: auto;
+    height: fit-content;
+
+    margin-bottom: 10px;
+    padding: 10px;
+
+    background-color: rgba(75, 138, 255, 0.473);
+    border-radius: 5px;
+
+    color: white;
+}
+
+.sidebar-event h3 {
+    margin: 0 10px 0 5px;
+}
+

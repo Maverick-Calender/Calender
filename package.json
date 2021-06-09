@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "axios": "^0.21.1",
+    "common-js": "^0.3.8",
+    "discord-rich-presence": "^0.0.8",
+    "electron": "^13.0.1",
+    "electron-builder": "^22.10.5",
+    "electron-store": "^8.0.0",
+    "electron-window-state": "^5.0.3",
+    "fast-xml-parser": "^3.19.0",
+    "https": "^1.0.0",
+    "jquery": "^3.6.0",
+    "katal": "^9.6.2",
+    "node-fetch": "^2.6.1",
+    "qs": "^6.5.2"
+  },
+  "name": "calender",
+  "productName": "Maverick",
+  "icon": "icons/macos/maverick-macos-x1.icns",
+  "version": "0.0.1",
+  "description": "A Simple School Timtable App Made With Electron",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"nothing\""
+  },
+  "author": "Jonathan Voss",
+  "license": "ISC"
+}

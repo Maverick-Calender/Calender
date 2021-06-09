@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>Maverick</title>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="toolbar drag">
+
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-overview">
+            <h2><span id="monthHolder"></span> <span id="yearHolder"></span></h2>
+            <table id="calWrapper">
+            </table>
+        </div>
+        <div class="sidebar-events">
+            <div class="sidebar-event">
+                <h3>
+                    Hi
+                </h3>
+                <p>
+                    bye!
+                </p>
+            </div>
+            <div class="sidebar-event">
+                <h3>
+                    Hi
+                </h3>
+                <p>
+                    bye!
+                </p>
+            </div>
+            <div class="sidebar-event">
+                <h3>
+                    Hi
+                </h3>
+                <p>
+                    bye!
+                </p>
+            </div>
+            <div class="sidebar-event">
+                <h3>
+                    Hi
+                </h3>
+                <p>
+                    bye!
+                </p>
+            </div>
+            <div class="sidebar-event">
+                <h3>
+                    Hi
+                </h3>
+                <p>
+                    bye!
+                </p>
+            </div>
+            <div class="sidebar-event">
+                <h3>
+                    Hi
+                </h3>
+                <p>
+                    bye!
+                </p>
+            </div>
+            <div class="sidebar-event">
+                <h3>
+                    Hi
+                </h3>
+                <p>
+                    bye!
+                </p>
+            </div>
+            <div class="sidebar-event">
+                <h3>
+                    Hi
+                </h3>
+                <p>
+                    bye!
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="window-content">
+        <h1>Hello World!</h1>
+        <p>Current theme source: <strong id="theme-source">System</strong></p>
+
+        <button id="toggle-dark-mode">Toggle Dark Mode</button>
+        <button id="reset-to-system">Reset to System Theme</button>
+
+        <p id="kamar"></p>
+
+        <form id="login-form">
+            <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+            <input type="submit" value="Login" id="login-form-submit">
+          </form>
+
+          <input type="submit" value="Get timetable" id="login-timetable-get">
+
+        <table id="timetableWrapper">
+        </table>
+    </div>
+
+    <script src="scripts/calender.js""></script>
+    <script src=" scripts/login.js"> </script>
+    <script src="renderer.js"></script>
+</body>
+
+</html>
