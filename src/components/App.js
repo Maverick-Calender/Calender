@@ -9,8 +9,6 @@ import '../assets/css/App.css'
 import './App.js'
 
 export default function App() {
-  const kamar = new Kamar({ portal: 'portal.mahurangi.school.nz/kamar' });
-
   const myItems = [
     { Class: 'L2BUS', Room: 'R1', Teacher: 'MOC', Time: undefined },
     { Class: 'L2DVC', Room: 'T2', Teacher: 'STE', Time: undefined },
@@ -36,15 +34,6 @@ export default function App() {
     },
     { Class: 'L2PHY', Room: 'K7', Teacher: 'MCM', Time: undefined }
   ];
-
-  kamar.logon("jv96", "1249")
-    .then(credentials => {
-        kamar.getCalendar(credentials)
-            .then(calender => kamar.getTimetable(credentials, calender))
-            .then(timetable => {
-                console.log(timetable[1])
-            })
-    })
   
   return ( <div className="pt-10">
     <Nav>
@@ -54,6 +43,5 @@ export default function App() {
       </Nav>
     <Timetable periods={ myItems }/> 
     </div>
-
   )
 }
